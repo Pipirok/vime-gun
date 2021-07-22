@@ -4,7 +4,6 @@ require("gun/axe");
 
 const app = express();
 app.use(Gun.serve);
-app.use(express.static(__dirname));
 
 const PORT =
   process.env.OPENSHIFT_NODEJS_PORT ||
